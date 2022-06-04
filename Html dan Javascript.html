@@ -1,0 +1,98 @@
+<!--2100018226-Baharudin Alvin Daroji
+2100018256=Andri Pangsitu -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body bgcolor="grey">
+
+
+
+
+
+	<script language="JavaScript">
+
+		function cetak(){
+	var nama = (document.fform.inama.value);
+	var nim = (document.fform.inim.value);
+	var fakultas = (document.fform.ifakultas.value);
+	var prodi = (document.fform.iprodi.value);
+	var angkatan = (document.fform.iangkatan.value);
+
+	document.fform.onama.value=nama;
+	document.fform.onim.value=nim;
+	document.fform.ofakultas.value=fakultas;
+	document.fform.oprodi.value=prodi;
+	document.fform.oangkatan.value=angkatan;
+}
+function warna(pilihan){
+alert("Anda Memilih Warna " + pilihan);
+document.bgColor=pilihan;}
+
+	</script>
+
+
+
+	<FORM NAME="fform" bgColor="red">
+		     <table border="1" align="center" width="70%" bgcolor="darkgrey">
+            <tr>
+                <td width="100%" colspan="2">
+                    <H2 ALIGN="center">DATA MAHASISWA</H2>
+                    <H2 ALIGN="center">UNIVERSITAS AHMAD DAHLAN</H2>
+                    <hr width="500" color="black" noshade>
+                </td>
+            </tr>
+
+           <tr>
+                <td width="50%"><pre>
+<h3 align="center">INPUT</h3>                	
+Nama        :<input type="text" size="20" name="inama">
+NIM         :<input type="text" size="20" name="inim">
+Fakultas    :<input type="text" size="20" name="ifakultas">
+Prodi       :<input type="text" size="20" name="iprodi">
+Angkatan    :<input type="text" size="20" name="iangkatan">
+				</td></pre>
+
+
+                <td width="50%"><pre>
+<h3 align="center">OUTPUT</h3>                	
+Nama        :<input type="text" size="20" name="onama">
+NIM         :<input type="text" size="20" name="onim">
+Fakultas    :<input type="text" size="20" name="ofakultas">
+Prodi       :<input type="text" size="20" name="oprodi">
+Angkatan    :<input type="text" size="20" name="oangkatan">
+				</td><pre>
+			</tr>
+
+			<tr>
+				<td width="100%" colspan="2">
+				<center>
+					<INPUT TYPE="button" value="Cetak" onclick="cetak()">
+					<INPUT TYPE="reset" value="Ulang">
+				</center></td>
+			</tr>
+			<tr>
+				<td width="100%" colspan="2">
+					<h3 align="center">UBAH WARNA BACKGROUNDS</h3>
+
+	<center>
+  		<form>
+    		<INPUT TYPE="button" VALUE="Biru"onclick="warna('lightblue')">
+    		<INPUT TYPE="button" VALUE="red" onclick="warna('FF6666')">
+    		<INPUT TYPE="button" VALUE="back"onmouseover="warna('white')">
+		</form> 
+	</center>
+				</td>
+			</tr>
+
+		</table>
+</FORM>
+
+
+	
+
+</body>
+</html>
